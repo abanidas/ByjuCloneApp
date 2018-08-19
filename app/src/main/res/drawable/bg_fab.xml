@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:width="80dp" android:height="80dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="#FFBE03DB"
+                android:endColor="#6397ec" />
+        </shape>
+
+    </item>
+    <item android:gravity="center"
+        android:top="4dp">
+        <bitmap android:src="@drawable/ic_fab"
+            android:gravity="fill_horizontal"
+            />
+
+    </item>
+
+</layer-list>

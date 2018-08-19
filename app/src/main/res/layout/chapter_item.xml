@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="12dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+        <LinearLayout
+            android:id="@+id/ll_card_bacground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Introduction"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginVertical="4dp"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressTint="#00BCD4"
+                        android:secondaryProgressTint="#6600BCD4"
+                        android:progress="4"
+                        android:secondaryProgress="100"
+                        android:max="100"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_play"
+                    android:layout_margin="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_collapsing_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_watch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Watch Video"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_right_arrow"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_test_exercise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_test"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Take Test"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_right_arrow"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <ImageButton
+                android:id="@+id/btn_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
